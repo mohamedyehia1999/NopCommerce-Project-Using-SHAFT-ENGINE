@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NopCommerce Project">
+    <test name="Regression Test">
+        <classes>
+            <class name="tests.RegisterTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.SearchTest"/>
+            <class name="tests.AddToWishlistTest"/>
+            <class name="tests.AddToCompareListTest"/>
+            <class name="tests.EmailFriendTest"/>
+            <class name="tests.AddToCartTest"/>
+            <class name="tests.CheckoutTest"/>
+            <class name="tests.LogoutTest"/>
+            <class name="tests.ContactUsTest"/>
+            <class name="tests.MyAccountTest"/>
+        </classes>
+    </test>
+</suite>

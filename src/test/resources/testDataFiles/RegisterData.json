@@ -1,0 +1,10 @@
+{
+  "Firstname": "Mohamed",
+  "Lastname":"Yehia",
+  "day": "1",
+  "month": "5",
+  "year": "1999",
+  "Email": "mohamedyehia70@yehia.com",
+  "Password": "123123",
+  "RegisteredSuccessMessage": "Your registration completed"
+}
