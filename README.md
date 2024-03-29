@@ -5,6 +5,6 @@
 ## Website used:
 * [NopCommerce](https://demo.nopcommerce.com/) <br><img alt="nopCommerce demo store" src="https://demo.nopcommerce.com/Themes/DefaultClean/Content/images/logo.png">
 ## Project Design:
-* Page Object Model (POM) design pattern.
+* Page Object Model (POM) Design Pattern.
 * Data Driven framework (JSON files).
 ## Project Done By : Mohamed Yehia
