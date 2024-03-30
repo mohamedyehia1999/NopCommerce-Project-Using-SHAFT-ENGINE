@@ -14,6 +14,7 @@ public class ProductDetailsPage
     private By EmailAFriendBtn=By.cssSelector("button.button-2.email-a-friend-button");
     private By WishlistLink=By.linkText("wishlist");
     private By CompareListLink= By.linkText("product comparison");
+    private By AddToCompareSuccessMessage= By.cssSelector("p.content");
     private By ShoppingCartLink= By.linkText("shopping cart");
 
 
@@ -58,6 +59,11 @@ public class ProductDetailsPage
     @Step("Click On Shopping Cart Link")
     public ProductDetailsPage ClickOnShoppingCartLink(){
         driver.element().click(ShoppingCartLink);
+        return this;
+    }
+    @Step("Verify That The Product Is Added To Compare List Successfully")
+    public ProductDetailsPage ValidateThatProductIsAddedSuccessfully(String ExpectedResult){
+        driver.element().assertThat(AddToCompareSuccessMessage).text().contains(ExpectedResult).perform();
         return this;
     }
 }
