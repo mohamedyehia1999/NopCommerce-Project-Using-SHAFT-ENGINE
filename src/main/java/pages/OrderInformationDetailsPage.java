@@ -20,13 +20,11 @@ public class OrderInformationDetailsPage
         return this;
     }
     @Step("Click on the PDF Invoice Button")
-    public void ClickOnPDF(){
+    public OrderInformationDetailsPage ClickOnPDF(){
 
-        driver.element().click(PDFInvoiceBtn).and().typeFileLocationForUpload(PDFInvoiceBtn,"Shaft_Engine_Demo_Project/downloads");
-    }
-    @Step(" Validate Invoice  Is downloaded  ")
-    public OrderInformationDetailsPage validateInvoiceDownloaded(String filename) {
-        Validations.assertThat().file(SHAFT.Properties.paths.downloads(), filename).exists().perform();
+        driver.element().click(PDFInvoiceBtn);
         return this;
+        
     }
+  
 }
