@@ -23,12 +23,15 @@ public class AddToCompareListTest extends BaseTest
 
         searchPage.SearchForProduct(searchdata.getTestData("SearchItem"));
         searchPage.ClickOnProductDetails();
-        productDetailsPage.ClickOnAddToCompareListButton();
+        productDetailsPage
+                .ClickOnAddToCompareListButton()
+                .ValidateThatProductIsAddedSuccessfully(comparelistdata.getTestData("SuccessMessage"));
 
         searchPage.SearchForProduct(searchdata.getTestData("SearchItem2"));
         searchPage.ClickOnProductDetails();
         productDetailsPage
                 .ClickOnAddToCompareListButton()
+                .ValidateThatProductIsAddedSuccessfully(comparelistdata.getTestData("SuccessMessage"))
                 .ClickOnCompareListLink();
 
         compareListPage
