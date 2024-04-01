@@ -1,7 +1,7 @@
 package pages;
 
 import com.shaft.driver.SHAFT;
-import io.qameta.allure.Step;
+import io.qameta.allure.Step
 import org.openqa.selenium.By;
 
 public class CompareListPage
@@ -14,7 +14,7 @@ public class CompareListPage
     public CompareListPage(SHAFT.GUI.WebDriver driver){
         this.driver=driver;
     }
-    @Step("Cleat the product from the compare list")
+    @Step("Clear the product from the compare list")
     public CompareListPage ClearProductsFromCompareList(){
         driver.element().click(ClearListBtn);
         return this;
