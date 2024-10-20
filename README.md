@@ -7,4 +7,6 @@
 ## Project Design:
 * Page Object Model (POM) Design Pattern.
 * Data Driven framework (JSON files).
+## Note:-
+ * The Website Developer added the CAPTCHA After I finished the Automation Script.
 ## Project Done By : Mohamed Yehia
